@@ -9,3 +9,13 @@ There will be a maximum of 3 guesses allowed
 
 expectedUsername = "systemadmin"
 expectedPassword = "master"
+
+
+for i in range(1,4):
+    user= str(input("Enter your username:"))
+    password= str(input("Enter your password:")) 
+    if user==expectedUsername and password==expectedPassword:
+        print ("Access Granted")
+        break 
+    else:
+        print ("Access denied. Try again.")
