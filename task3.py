@@ -12,3 +12,11 @@ etc.
 
 users = ["annie","betty","charles","doug","eddie","flon"]
 passwords = ["12345","password","iloveyou","mom","default","0"]
+
+username= input("Enter your username:")
+password = input("Enter your password:")
+
+if username in users and password in password:
+    print("Login Successful!")
+else: 
+    print("Incorrect password.")
