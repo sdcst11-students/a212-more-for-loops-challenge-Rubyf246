@@ -14,9 +14,16 @@ users = ["annie","betty","charles","doug","eddie","flon"]
 passwords = ["12345","password","iloveyou","mom","default","0"]
 
 username= input("Enter your username:")
-password = input("Enter your password:")
-
-if username in users and password in password:
-    print("Login Successful!")
+pwd = input("Enter your password:")
+if username in users:
+    print("okay")
+if pwd in passwords:
+    print ("okayyy")
 else: 
-    print("Incorrect password.")
+   print("nothing")
+
+for i in range(6):
+    print (users[i])
+
+for i in range (6):
+    print (pwd[i])
