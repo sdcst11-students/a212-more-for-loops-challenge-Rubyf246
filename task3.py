@@ -13,17 +13,12 @@ etc.
 users = ["annie","betty","charles","doug","eddie","flon"]
 passwords = ["12345","password","iloveyou","mom","default","0"]
 
-username= input("Enter your username:")
-pwd = input("Enter your password:")
-if username in users:
-    print("okay")
-if pwd in passwords:
-    print ("okayyy")
-else: 
-   print("nothing")
 
-for i in range(6):
-    print (users[i])
+username = input("Enter your username: ")
+pwd = input("Enter your password: ")
 
-for i in range (6):
-    print (pwd[i])
+for i in range(len(users)): 
+    if username == users[i] and pwd == passwords[i]: 
+        print("Login Successful!")
+        break
+else: print("Access denied.Try Again.")
